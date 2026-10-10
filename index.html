@@ -1,155 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Burgundary | Web Development & Business Websites in South Africa</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Burgundary provides professional web development services for individuals, startups, and businesses in South Africa. Affordable websites, e-commerce, and custom solutions.">
-  <meta name="keywords" content="web development South Africa, website design, business websites, ecommerce websites, Burgundary">
+  <meta name="theme-color" content="#171014">
+  <meta name="description" content="Burgundary designs and builds websites for individuals, startups, and growing businesses across South Africa.">
   <meta name="author" content="Burgundary Technology Services">
-
-  <!-- Open Graph (Social + Google Business) -->
-  <meta property="og:title" content="Burgundary | Web Development Services">
-  <meta property="og:description" content="Professional, scalable websites for startups and growing businesses.">
+  <meta property="og:title" content="Burgundary | Web Development & Technology Services">
+  <meta property="og:description" content="Thoughtful websites for South African businesses. Explore packages and start a conversation.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_ZA">
-
-  <!-- Fonts -->
+  <title>Burgundary | Web Development & Technology Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Burgundary Web Development & Technology Services</h1>
-<p>
-  Burgundary designs and builds reliable, scalable websites for individuals,
-  startups, and growing businesses across South Africa.
-</p>
-
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Burgundary home"><span class="wordmark-mark">B</span><span>Burgundary<span class="rose">.</span></span></a>
+    <nav aria-label="Main navigation"><a href="#packages">Packages</a><a href="#care">Care plans</a><a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></nav>
   </header>
-  
-  <main>
-    <section class="packages">
-      <header class="section-header">
-        <h2>Website Packages</h2>
-      </header> 
-      
-  <p>
-    We offer affordable website packages designed to meet different business needs,
-    from simple starter sites to advanced e-commerce platforms.
-  </p>
-      
-      <ul class="package-list">
-        <li>Starter Site: <span id="starterPrice"></span> + R150 monthly maintenance(optional)</li>
-        
-        <li>Basic Site: <span id="basicPrice"></span> + R200 monthly maintenance(optional)</li>
-        
-        <li>Business Site: <span id="businessPrice"></span> + R300 monthly maintenance(optional)</li>
-        
-        <li>Advanced Site: from <span id="advancedPrice"></span> + R400 monthly maintenance(optional)</li>
-        
-        <li>E-commerce: From <span id="ecommercePrice"></span> + R500 monthly maintenance(optional)</li>
-      </ul>
-      
-      <p>Custom features priced according to project scope</p>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">South African web development</p>
+        <h1>Make your next<br><em>move online.</em></h1>
+        <p class="hero-copy">Thoughtful websites for individuals, startups, and growing businesses. Clear options, practical support, and room to grow.</p>
+        <div class="actions"><a class="button" href="#packages">Explore packages <span aria-hidden="true">↓</span></a><a class="text-link" href="https://wa.me/27812505573?text=Hello%20Burgundary%2C%20I%20would%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a></div>
+        <p class="hero-note"><span class="status-dot"></span> Based in South Africa <span class="rose">·</span> Serving clients nationwide</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="art-card"><small>A better first impression</small><i></i><i></i><i></i><b></b><span></span></div><strong>✳</strong></div>
+      <a class="scroll-cue" href="#packages">↓ &nbsp; Scroll to explore</a>
     </section>
-    
-    <section class="hosting-and-domain">
-      <header class="section-header">
-        <h2>Hosting , Domain & Monthly Maintenance.</h2>
-      </header>
-      
-      <ul>
-        <li>Starter Site Hosting: <span id="starterHostingPrice"></span>/ month (optional)</li>
-
-        <li>Basic Site Hosting: <span id="basicHostingPrice"></span>/ month (optional)</li>
-
-        <li>Business Site Hosting: <span id="BusinessHostingPrice"></span>/ month (optional)</li>
-
-        <li>Advanced Site Hosting: <span id="AdvancedHostingPrice"></span>/ month (optional)</li>
-
-        <li>E-commerce Site Hosting: <span id="commerceHostingPrice"></span>/ month (optional)</li>
-        
-        <li>Domain registration and yearly renewal: <span id="domainPrice"></span>/ year</li>
-        
-        <li>First 3 months: only 10% of hosting fee</li>
-      </ul>
-      
-      <p>Custom hosting setup on Render: R500</p>
+    <section class="packages content-section" id="packages">
+      <div class="section-heading reveal"><p class="eyebrow">Find your starting point</p><h2>Website packages<span class="rose">.</span></h2><p>Choose a package that fits your needs today. Custom features can be scoped to your project.</p></div>
+      <div class="package-grid">
+        <article class="package-card reveal"><p class="kicker">01 / A simple start</p><h3>Starter Site</h3><p class="price" id="starterPrice"></p><small>Once-off project price</small><hr><p>A focused first step for getting your presence online.</p><small>Optional maintenance: R150/month</small><a href="#contact">Ask about Starter <span>↗</span></a></article>
+        <article class="package-card reveal"><p class="kicker">02 / Build your presence</p><h3>Basic Site</h3><p class="price" id="basicPrice"></p><small>Once-off project price</small><hr><p>A practical website for a small business or personal brand.</p><small>Optional maintenance: R200/month</small><a href="#contact">Ask about Basic <span>↗</span></a></article>
+        <article class="package-card featured reveal"><label>For growing teams</label><p class="kicker">03 / Grow with confidence</p><h3>Business Site</h3><p class="price" id="businessPrice"></p><small>Once-off project price</small><hr><p>More room to present your services and support growth.</p><small>Optional maintenance: R300/month</small><a href="#contact">Ask about Business <span>↗</span></a></article>
+        <article class="package-card reveal"><p class="kicker">04 / More possibilities</p><h3>Advanced Site</h3><p class="price">From <span id="advancedPrice"></span></p><small>Final price depends on scope</small><hr><p>For projects that need a more tailored set of features.</p><small>Optional maintenance: R400/month</small><a href="#contact">Discuss your scope <span>↗</span></a></article>
+        <article class="package-card reveal"><p class="kicker">05 / Sell online</p><h3>E-commerce</h3><p class="price">From <span id="ecommercePrice"></span></p><small>Final price depends on scope</small><hr><p>An online store project, scoped around your products and needs.</p><small>Optional maintenance: R500/month</small><a href="#contact">Discuss your store <span>↗</span></a></article>
+      </div>
+      <p class="footnote reveal">Prices are starting points and may change. Custom features are priced according to project scope.</p>
     </section>
-
-    <section class="maintenance">
-  <h2>Monthly Maintenance</h2>
-
-  <p>
-    Our monthly maintenance plan keeps your website secure, updated, and running smoothly.
-    This service is optional but recommended for businesses that want their website
-    professionally managed.
-  </p>
-
-  <ul>
-    <li>Website monitoring (uptime checks)</li>
-    <li>Regular backups</li>
-    <li>Security checks</li>
-    <li>Content updates (text and images)</li>
-    <li>Bug fixes and small changes</li>
-    <li>Performance checks</li>
-    <li>Technical support</li>
-  </ul>
-</section>
-
-<section class="why-maintenance">
-  <h2>Why Monthly Maintenance?</h2>
-  <p>
-    Websites need regular updates, backups, and security checks to stay fast and secure.
-    Without maintenance, websites can become slow, break, or become vulnerable to security issues.
-  </p>
-  <p>
-    Our maintenance plan ensures your website stays online, secure, and up to date
-    so you can focus on running your business.
-  </p>
-</section>
-    
-<section class="get-started">
-  <h3>Get Started</h3>
-  <p>
-    Contact us to discuss your project requirements and receive a tailored solution.
-  </p>
-</section>
-    
+    <section class="care content-section" id="care">
+      <div class="care-copy reveal"><p class="eyebrow">Keep things running</p><h2>Good websites need a little care<span class="rose">.</span></h2><p>Optional hosting, domain, and maintenance plans are available. We can talk through what your project needs before you choose.</p><ul class="care-points"><li><b>↗</b><span><strong>Hosting</strong><small>Optional monthly hosting by package</small></span></li><li><b>◎</b><span><strong>Domain</strong><small>Registration and yearly renewal</small></span></li><li><b>✳</b><span><strong>Maintenance</strong><small>Updates, backups, and support</small></span></li></ul></div>
+      <aside class="hosting-card reveal"><h3>Hosting &amp; domain</h3><ul><li><span>Starter hosting</span><b id="starterHostingPrice"></b><small>/ month</small></li><li><span>Basic hosting</span><b id="basicHostingPrice"></b><small>/ month</small></li><li><span>Business hosting</span><b id="BusinessHostingPrice"></b><small>/ month</small></li><li><span>Advanced hosting</span><b id="AdvancedHostingPrice"></b><small>/ month</small></li><li><span>E-commerce hosting</span><b id="commerceHostingPrice"></b><small>/ month</small></li><li class="domain-row"><span>Domain renewal</span><b id="domainPrice"></b><small>/ year</small></li></ul><p>Optional services. First 3 months: 10% of hosting fee. Custom hosting setup on Render: R500.</p></aside>
+    </section>
+    <section class="maintenance content-section reveal"><div><p class="eyebrow">Ongoing support</p><h2>Make room to focus on your business.</h2></div><ul><li>Website monitoring and performance checks</li><li>Regular backups and security checks</li><li>Content updates for text and images</li><li>Bug fixes, small changes, and technical support</li></ul></section>
+    <section class="contact content-section" id="contact"><div class="contact-panel reveal"><p class="eyebrow">Have a project in mind?</p><h2>Let's make it<br><em>happen.</em></h2><p>Tell us what you need and we'll help you find a good starting point.</p><div class="actions"><a class="button button-light" href="https://wa.me/27812505573?text=Hello%20Burgundary%2C%20I%20would%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer">Start on WhatsApp ↗</a><a class="phone" href="tel:+27812505573">Call 081 250 5573</a></div></div></section>
   </main>
-  
-    <footer>
-  <p>&copy; 2024-<span id="currentYear"></span> <span id="brand">Burgundary</span>. All rights reserved.</p>
-  <p>
-    All website designs and content are provided "as is". Burgundary is not responsible for any indirect, incidental, or consequential damages arising from the use of our services. Prices and packages are subject to change.
-  </p>
-  <p>
-    We respect your privacy. Any personal data collected (such as contact details) is used solely to provide our services and will not be shared with third parties.
-  </p>
-  
-  <p>
-  Based in South Africa • Serving clients nationwide
-</p>
-
-<a 
-  href="https://wa.me/27625758996?text=Hello%20Burgundary,%20I%20would%20like%20to%20discuss%20a%20website%20project."
-  target="_blank"
-  class="whatsapp"
->
-  Contact Burgundary on WhatsApp
-</a>
-</footer>
-
+  <footer><a class="wordmark" href="#top"><span class="wordmark-mark">B</span><span>Burgundary<span class="rose">.</span></span></a><p>Based in South Africa <span class="rose">·</span> Serving clients nationwide</p><a class="phone" href="tel:+27812505573">081 250 5573</a><small class="legal">© 2024–<span id="currentYear"></span> Burgundary Technology Services. Prices and packages may change. Personal data shared with us is used to respond to your enquiry and provide our services.</small></footer>
   <script src="main.js"></script>
 </body>
 </html>
